@@ -1,0 +1,24 @@
+ *{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+/* 1rem = 10px */
+/* 100% = 16px*/
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --color-primary: #040427;
+  --color-secondary: #ffffff;
+  --color-crimson: #c70c31;
+  --color-grey: #d3cece;
+  --color-dark-gray: #a9a9a9;
+  --color-black: #000000;
+}
+body {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+}
