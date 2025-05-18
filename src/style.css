@@ -1,4 +1,4 @@
- *{
+* {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
@@ -21,4 +21,38 @@ html {
 body {
   font-size: 1.6rem;
   font-family: var(--primary-font);
+}
+.header {
+  height: 100%;
+  background-color: var(--color-primary);
+}
+.header-navigation {
+  padding: 2rem 2rem;
+  border: 3px solid red;
+  max-width: 100%;
+}
+
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+}
+@media screen and (max-width: 450px) {
+  .header-nav-list {
+    gap: 2rem;
+  }
+}
+
+.header-list-nav-item a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.5s;
+  font-weight: bolder;
+}
+.header-nav-list :hover {
+  color: #5757eb;
 }
