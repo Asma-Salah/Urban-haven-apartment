@@ -23,6 +23,11 @@ html {
   --color-blue-dark:#101094;
   scroll-behavior: smooth;
 }
+
+::selection{
+  background-color: var(--color-primary);
+  color: var(--color-white-lighter);
+}
 body {
   font-size: 1.6rem;
   font-family: var(--primary-font);
@@ -33,7 +38,12 @@ body {
   background-color: var(--color-primary);
   position: sticky;
   top: 0;
-  z-index: 10000
+  z-index: 10000;
+}
+@media screen and (max-width:780px){
+  .header{
+padding: 4rem 4rem;
+  }
 }
 
 .header-navigation {
