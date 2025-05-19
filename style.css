@@ -21,6 +21,7 @@ html {
   --color-white-light: #f3f3f3;
   --color-blue-light: #7171f1;
   --color-blue-dark:#101094;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 1.6rem;
@@ -32,7 +33,7 @@ body {
   background-color: var(--color-primary);
   position: sticky;
   top: 0;
-  z-index: 10000;
+  z-index: 10000
 }
 
 .header-navigation {
@@ -64,6 +65,27 @@ body {
 .header-nav-list :hover {
   color: #5757eb;
 }
+/* scroll to top button */
+.scroll-to-top{
+  --scroll-to-top-length: 6rem;
+  width: var(--scroll-to-top-length);
+  height: var(--scroll-to-top-length);
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 4rem;
+  font-weight: bolder;
+  color: var(--color-white-light);
+  text-decoration: none;
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  z-index: 10000000;
+}
+/* end of scroll button */
+
 /* hero-section-styling */
 .hero-section {
   min-height: 60vh;
@@ -244,8 +266,9 @@ h2 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 2rem 0;
-  padding: 2rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 11rem;
+  padding: 0 2rem;
   
 }
 
@@ -320,11 +343,30 @@ text-transform: capitalize;
   text-transform: capitalize;
   text-align: center;
   transition: all 1s;
+  color: var(--color-white-light);
 
 }
 .contact-labels:hover button{
   background-color: var(--color-blue-dark);
 }
-
-
 /* end of styling contacts */
+
+/* footer */
+.footer{
+  height: 100%;
+  min-width: 100%;
+  background-color: var(--color-primary);
+  padding: 4rem 2rem;
+  margin-top:2rem;
+}
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content{
+  text-transform: capitalize;
+  color: var(--color-white-light);
+}
+/*  end of footer */
