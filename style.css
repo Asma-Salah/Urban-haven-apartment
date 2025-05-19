@@ -11,7 +11,7 @@ html {
 
 :root {
   --primary-font: "Roboto", sans-serif;
-  --color-primary: #040427;
+  --color-primary: #09092b;
   --color-secondary: #ffffff;
   --color-crimson: #c70c31;
   --color-grey: #d3cece;
@@ -20,6 +20,7 @@ html {
   --color-white-lighter: #fffbfb;
   --color-white-light: #f3f3f3;
   --color-blue-light: #7171f1;
+  --color-blue-dark:#101094;
 }
 body {
   font-size: 1.6rem;
@@ -227,3 +228,103 @@ h2 {
 }
 
 /* end of styling amenities */
+/* styling-contacts */
+
+
+
+.contacts-title{
+  color: var(--color-primary);
+  margin-top: 6rem;
+ padding: 2rem 2rem;
+}
+.contacts-container{
+
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 2rem 2rem;
+  
+}
+
+.contacts-card{
+ 
+  margin-right: 2.5rem;
+  width: 25%;
+  min-height: 70vh;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  color: var(--color-secondary);
+  line-height: 2;
+  
+}
+.card-title{
+text-transform: capitalize;
+} 
+
+.social-icons{
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  line-height: 2;
+  margin-top: 1.5rem;
+}
+.social-icons i{
+  font-size: 2.8rem;
+  transition: all 1s;
+
+}
+.social-icons:hover i{
+  color: var(--color-blue-dark);
+}
+.form-card{
+ 
+  width: 25%;
+  min-height: 70vh;
+  padding: 2rem 2rem;
+
+  display: flex;
+  flex-wrap: wrap; 
+  border-radius: 10px;
+  background-color: var(--color-white-light);
+  line-height: 2;
+   
+}
+
+
+.contact-labels input{
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  text-align: center;
+  
+}
+.contact-labels label{
+  padding: 1rem 1rem;
+  display: block;
+}
+.contact-labels textarea{
+ display: block;
+}
+.contact-labels button{
+  background-color: var(--color-blue-light);
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  margin-top:1rem ;
+  text-transform: capitalize;
+  text-align: center;
+  transition: all 1s;
+
+}
+.contact-labels:hover button{
+  background-color: var(--color-blue-dark);
+}
+
+
+/* end of styling contacts */
